@@ -3,3 +3,9 @@ What happens when you initialize a repository? Why do you need to do it?
 Git will be able to track changes made to new files created in the repository.
 In order to make and track commits, a repository first needs to be
 initialized.
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area is where I track the one or more files whose changes will be
+part of my next single commit. 

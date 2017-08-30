@@ -1,4 +1,65 @@
 When would you want to create a remote repository rather than keeping all your work local?
 
-This would be useful when I intend to collaborate with others on the same project, or, 
+This would be useful when I intend to collaborate with others on the same project, or,
 if I wanted make contributions to my project from different machines.
+
+Why might you want to always pull changes manually rather than having
+Git automatically stay up-to-date with your remote repository?
+
+Changes may have been made on the remote repository that I won't want to
+bring into the branch I'm working on locally.
+
+Describe the differences between forks, clones, and branches. When would
+you use one instead of another?
+
+Forks allow me to copy a repository of someone else's work on GitHub to my own
+GitHub account. When I fork someone else's repository, there will be an
+indicator that it originally came from their work. I like to fork repositories
+when I want to take use something created by someone else, but
+add some of my own modifications and leave their original work intact.
+
+Clones give me an easy way to move any repository to my machine so I can work
+on it locally. When I do this, however, there isn't any record of who the
+original creator of the repository was. If I prefer, I can take the work
+I've done locally on my cloned repository and push it to the remote repository
+so that my edits will be visible to all the collaborators I'm working with on
+a project.
+
+Clones and forks make carbon copy duplicates of a repository. Branches,
+on the other hand, duplicate only those commits already made to the
+branch of a local repository that I have currently checked out. The work done
+in a branch can eventually be merged back to the local main branch that it
+was originally split out from. However the effects of this merge would still
+only be visible inside the local repository. These changes would need to then
+be pushed to the remote repository if I wanted my changes to be visible to
+all members working remotely on the project whose repository I had locally
+cloned to my machine, if I had in fact done so.
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+I would be able to continue to do work relevant to the project, even if I'm
+currently offline, because I would be able to see what the most recent
+changes from other folks were. Also, having the last known state of the remote
+stored locally allows me to resolve any conflicts before I push my latest
+edits to the remote repository on GitHub.
+
+How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+I imagine it'd be some combination of Google docs, email, and Slack. These
+tools are more visual than Git. However, none of them offer as
+secure a way to structure collaboration and manage conflicting edits so as
+to make chances of a bug being introduced as low as GitHub does.
+
+When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+If I'm the only person working on a project, and if I'm making minor,
+incremental changes, then making changes directly in master is the most
+straightforward process. However, if many folks are working on a project,
+it's better for each of us to make our changes in separate branches, because,
+as we saw in the example we just worked through in this course, conflicts
+can arise. Working in a separate branch gives contributors the space to notice
+and then resolve those conflicts before any changes get merged to master
+on GitHub. This lowers the chances of screwing up the master branch.
